@@ -30,6 +30,7 @@ SEEDS = {
     "http://hb6dzgsmzmu3dmiflhvhe5yreknxtjvvatodgsmunxqgdhyqcro7ztid.onion",
     "http://tortaxi2dev6xjwbaydqzla77rrnth7yn2oqzjfmiuwn5h6vsk2a4syd.onion",
     "http://dailydwusclfsu7fzwydc5emidexnesmdlzqmz2dxnx5x4thl42vj4qd.onion",
+    "http://jptvwdeyknkv6oiwjtr2kxzehfnmcujl7rf7vytaikmwlvze773uiyyd.onion/?v3",
     "http://ahmia.fi/onions"
 }
 
@@ -40,6 +41,7 @@ DIRS_TO_SCRAPE = [
     "http://hb6dzgsmzmu3dmiflhvhe5yreknxtjvvatodgsmunxqgdhyqcro7ztid.onion",
     "http://tortaxi2dev6xjwbaydqzla77rrnth7yn2oqzjfmiuwn5h6vsk2a4syd.onion",
     "http://dailydwusclfsu7fzwydc5emidexnesmdlzqmz2dxnx5x4thl42vj4qd.onion",
+    "http://jptvwdeyknkv6oiwjtr2kxzehfnmcujl7rf7vytaikmwlvze773uiyyd.onion/?v3",
     "http://ahmia.fi/onions"
 ]
 
@@ -148,7 +150,7 @@ async def main():
     scanned_set = {row[0] for row in cur.execute("SELECT url FROM scanned")}
     to_crawl = set(SEEDS) - scanned_set
     transport = AsyncProxyTransport.from_url(PROXY_URL)
-    concurrency = 10
+    concurrency = 100
 
     while True:
         if not to_crawl:
