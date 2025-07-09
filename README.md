@@ -173,6 +173,6 @@ DM via GitHub or submit issues via the [Issues tab](https://github.com/TheGodRX/
 
 ## ⭐️ If you like this project...
 <img src="https://raw.githubusercontent.com/TheGodRX/LiveIndex-OSINT/refs/heads/main/donate.svg" width="200" />
-
+DONATE XMR TO:  42uJeqTHZbgVhrGvkjBTRTMTavgNQSVJ64YLVGdiPMuP4s3zdXv6rr5HSSVo7yvDACPtXv9bdZ554Hf1rstvzL4sEgSVeT9 
 Give it a star 🌟 — it helps boost visibility and supports development!
 
