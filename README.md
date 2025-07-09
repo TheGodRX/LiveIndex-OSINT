@@ -143,12 +143,6 @@ These are stored and searchable through the Web UI — ideal for tracking actor 
 
 ---
 
-## 🧪 Sample Screenshot
-
-> _(Insert image if available of the dashboard or log output)_
-
----
-
 ## 🤝 Contributing
 
 Got a feature idea or UI enhancement? PRs welcome!
