@@ -1,4 +1,4 @@
-# 🕵️‍♂️ LiveIndex-OSINT — Onion Crawler & Live Intelligence Dashboard
+# 🕵 LiveIndex-OSINT — Onion Crawler & Live Intelligence Dashboard
 
 **LiveIndex-OSINT** is a powerful open-source dark web crawler and intelligence toolkit for `.onion` sites. Unlike typical scrapers, this system **actively discovers**, **indexes**, and **analyzes live onion services**, capturing metadata and PGP keys in real time — all accessible through a clean Web UI dashboard.
 
