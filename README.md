@@ -98,6 +98,7 @@ http://localhost:3000
 - Read extracted **PGP keys**
 - Explore full metadata for each domain
 - Export results for further OSINT investigation
+- Host as a hidden service
 
 ---
 
