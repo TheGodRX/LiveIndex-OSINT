@@ -45,6 +45,8 @@ cd LiveIndex-OSINT
 Make sure you're using Python 3.9+.
 
 ```bash
+sudo apt install sqlite3
+sudo apt install libsqlite3-dev
 pip install -r requirements.txt
 ```
 
@@ -54,6 +56,7 @@ Ensure Tor is running locally (default SOCKS5: `127.0.0.1:9050`)
 
 ```bash
 # Debian/Ubuntu
+tor
 sudo service tor start
 ```
 
@@ -75,7 +78,7 @@ Let it run in the background. It will automatically:
 ## 🌐 Web UI Usage
 
 1. **Launch the Web Dashboard**
-
+-In a new tab or terminal window run..:
 ```bash
 python webUI.py
 ```
