@@ -25,23 +25,21 @@ RE_PGP_KEY = re.compile(
 
 SEEDS = {
     "http://darkfailenbsdla5mal2mxn2uz66od5vtzd5qozslagrfzachha3f3id.onion",
-    "http://propublica.securedrop.tor.onion",
-    "http://onionrot.abusus.org",
     "http://onion.live/trending",
     "http://onionzwpil5nbukgflurrfvommx6aznkz7aaqh2gwm4qsxjj6yvihxid.onion",
-     "https://onionindex.org/",
-    "https://tordir.org/",
+    "http://hb6dzgsmzmu3dmiflhvhe5yreknxtjvvatodgsmunxqgdhyqcro7ztid.onion",
+    "http://tortaxi2dev6xjwbaydqzla77rrnth7yn2oqzjfmiuwn5h6vsk2a4syd.onion",
+    "http://dailydwusclfsu7fzwydc5emidexnesmdlzqmz2dxnx5x4thl42vj4qd.onion",
     "http://ahmia.fi/onions"
 }
 
 DIRS_TO_SCRAPE = [
     "http://darkfailenbsdla5mal2mxn2uz66od5vtzd5qozslagrfzachha3f3id.onion",
-    "http://propublica.securedrop.tor.onion",
-    "http://onionrot.abusus.org",
     "http://onion.live/trending",
     "http://onionzwpil5nbukgflurrfvommx6aznkz7aaqh2gwm4qsxjj6yvihxid.onion",
-     "https://onionindex.org/",
-    "https://tordir.org/",
+    "http://hb6dzgsmzmu3dmiflhvhe5yreknxtjvvatodgsmunxqgdhyqcro7ztid.onion",
+    "http://tortaxi2dev6xjwbaydqzla77rrnth7yn2oqzjfmiuwn5h6vsk2a4syd.onion",
+    "http://dailydwusclfsu7fzwydc5emidexnesmdlzqmz2dxnx5x4thl42vj4qd.onion",
     "http://ahmia.fi/onions"
 ]
 
