@@ -1,0 +1,5 @@
+httpx[http2]
+httpx-socks
+beautifulsoup4
+flask
+pysocks
