@@ -29,6 +29,7 @@ SEEDS = {
     "http://onionrot.abusus.org",
     "http://onion.live/trending",
     "http://onionzwpil5nbukgflurrfvommx6aznkz7aaqh2gwm4qsxjj6yvihxid.onion",
+    "http://torlistbsvieqsqctmi5fv2dbfxg7p3x77po7fhdcwfcr3xv5shxmzad.onion",
      "https://onionindex.org/",
     "https://tordir.org/",
     "http://ahmia.fi/onions"
@@ -40,6 +41,7 @@ DIRS_TO_SCRAPE = [
     "http://onionrot.abusus.org",
     "http://onion.live/trending",
     "http://onionzwpil5nbukgflurrfvommx6aznkz7aaqh2gwm4qsxjj6yvihxid.onion",
+    "http://torlistbsvieqsqctmi5fv2dbfxg7p3x77po7fhdcwfcr3xv5shxmzad.onion",
      "https://onionindex.org/",
     "https://tordir.org/",
     "http://ahmia.fi/onions"
