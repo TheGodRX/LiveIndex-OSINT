@@ -147,13 +147,57 @@ These are stored and searchable through the Web UI — ideal for tracking actor 
 
 ---
 
-## 🤝 Contributing
+## 🔍 Real-Time PGP Reuse Detection (pgp_match_daemon.py)
 
-Got a feature idea or UI enhancement? PRs welcome!
+In addition to indexing `.onion` sites and their metadata, LiveIndex-OSINT includes a **PGP Key Match Daemon** — a continuously running script that monitors your SQLite database (`onions2.db`) and identifies any **reused PGP keys** across different dark web sites.
+
+### 💡 What It Does
+
+- Watches the database in real time for new entries with PGP key blocks  
+- Matches identical PGP keys reused across different `.onion` URLs  
+- Outputs a clean and readable OSINT report in `pgp_matches.txt`  
+- Includes the **full PGP key**, matching URL list, and **site titles**  
+- Helps correlate hidden services that may be operated by the same entity
+
+### 📈 Why It’s Awesome
+
+- 🧠 **Uncovers operational links** between threat actors or marketplaces  
+- 🔁 **Runs continuously**, always monitoring for new PGP reuse  
+- 📄 **Generates human-readable reports** with structured key and site data  
+- 🕵️‍♂️ **Perfect for OSINT analysts**, journalists, or law enforcement mapping onion ecosystems
+
+Sample Output (pgp_matches.txt)
+markdown
+Copy
+Edit
+====================================================================
+🔐 Reused PGP Key Match
+====================================================================
+Used by 3 onion site(s)
+Key Fingerprint (SHA-256): 8a7c6f9e92f6cbde66c5bd3f4f716b4be1d99d5ddbe63e9e92b69e56e25d8a24
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: OpenPGP.js v4.10.10
+
+xsBNBFmABCABC...
+...
+-----END PGP PUBLIC KEY BLOCK-----
+
+🧭 Associated .onion URLs:
+ - http://marketxyz.onion           | "XYZ Market"
+ - http://securechatxyz.onion       | "Secure Drop Alpha"
+ - http://unknownforum77.onion      | "(No Title Found)"
+
+--------------------------------------------------------------------
+This script empowers deep linkage analysis of hidden services based on cryptographic reuse — a vital tool in modern darknet OSINT workflows.
+
+### ▶️ How to Use It
+
+Open a new terminal (while `indexer.py` is running) and execute:
 
 ```bash
-# Fork and clone your copy
-git checkout -b feature/my-enhancement
+python pgp_match_daemon.py
+
 ```
 
 ---
